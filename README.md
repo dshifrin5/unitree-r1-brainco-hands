@@ -12,38 +12,6 @@ custom 3D-printed wrist and PCB mounts, routing the wiring, connecting
 24 V power and USB, and then configuring the existing BrainCo/Unitree
 software on PC2.
 
-Once everything was working, the complete path looked roughly like this:
-
-``` text
-BrainCo Revo2 Hands
-        │
-        ├── Custom 3D-Printed Wrist Mounts
-        │
-        ├── Revo2 Wiring
-        │
-        └── 24 V Power
-              │
-              └── Power Splitter
-
-Revo2 Wiring / Connector
-        │
-        └── Interface PCB
-              │
-              ├── Custom 3D-Printed PCB Mount
-              └── USB
-                    │
-                    ▼
-              Unitree R1 PC2
-                    │
-                    ▼
-          brainco_hand_server
-                    │
-                    ▼
-               Unitree DDS
-              /           \
-             ▼             ▼
-     Left Hand Topics   Right Hand Topics
-```
 
 > **Important:** This documents one specific Unitree R1 + BrainCo Revo2
 > retrofit. Verify wiring, voltage, polarity, connectors, serial
@@ -100,8 +68,9 @@ needed for the BrainCo Revo2 retrofit.
 Before continuing, make sure the robot is powered down and that the
 wrist area is accessible.
 
-![Remove the original Unitree R1
-hands](images/01-remove-original-hands.jpg)
+![Remove the original Unitree R1 hands - Step 1](images/01-remove-original-hands.jpg)
+
+![Remove the original Unitree R1 hands - Step 2](images/02-remove-original-hands.jpg)
 
 ------------------------------------------------------------------------
 
