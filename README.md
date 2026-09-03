@@ -95,13 +95,11 @@ Next, install the custom 3D-printed wrist mount.
 The wrist mount acts as the mechanical interface between the Unitree R1
 wrist and the BrainCo Revo2 hand assembly.
 
-The STL used for this retrofit is stored in the repository:
+The STEP used for this retrofit is stored in the repository:
 
 ``` text
-hardware/wrist-mount.stl
+hardware/wrist-mount.step
 ```
-
-> Replace `wrist-mount.stl` with the actual STL filename.
 
 Position the mount correctly, make sure the Revo2 wiring remains
 accessible, and secure the mount to the wrist.
@@ -149,8 +147,6 @@ The STL for this mount is stored in the repository:
 ``` text
 hardware/pcb-mount.stl
 ```
-
-> Replace `pcb-mount.stl` with the actual STL filename.
 
 Attach the PCB to the printed mount, then secure the PCB/mount assembly
 at the top of the robot.
