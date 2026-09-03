@@ -68,9 +68,9 @@ needed for the BrainCo Revo2 retrofit.
 Before continuing, make sure the robot is powered down and that the
 wrist area is accessible.
 
-![Remove the original Unitree R1 hands - Step 1](images/01-remove-original-hands.jpg)
+![Remove the original Unitree R1 hands - Step 1](images/01-remove-original-hands.HEIC)
 
-![Remove the original Unitree R1 hands - Step 2](images/02-remove-original-hands.jpg)
+![Remove the original Unitree R1 hands - Step 2](images/02-remove-original-hands.HEIC)
 
 ------------------------------------------------------------------------
 
@@ -84,7 +84,7 @@ the custom wrist mount and Revo2 hand assembly are fully installed.
 Make sure the wiring is seated correctly and positioned so it will not
 be pinched when the wrist mount is attached.
 
-![Attach the BrainCo Revo2 wiring](images/02-revo2-wiring.jpg)
+![Attach the BrainCo Revo2 wiring](images/02-revo2-wiring.HEIC)
 
 ------------------------------------------------------------------------
 
@@ -113,7 +113,7 @@ Before moving on, check that:
 -   The hand has sufficient clearance.
 -   Nothing interferes with wrist motion.
 
-![Install the 3D-printed wrist mount](images/03-wrist-mount.jpg)
+![Install the 3D-printed wrist mount](images/03-wrist-mount.HEIC)
 
 ------------------------------------------------------------------------
 
@@ -136,7 +136,7 @@ Keep the wiring:
 Do not pull the wiring tight across an articulated joint. Leave enough
 service loop for the robot's intended range of motion.
 
-![Route the Revo2 wiring to the top](images/04-wire-routing.jpg)
+![Route the Revo2 wiring to the top](images/04-wire-routing.HEIC)
 
 ------------------------------------------------------------------------
 
@@ -158,7 +158,8 @@ at the top of the robot.
 Make sure the board is mechanically secure and that its connectors
 remain accessible for the hand wiring, power, and USB connection.
 
-![Attach the PCB to the 3D-printed mount](images/05-pcb-mount.jpg)
+![Attach the PCB to the 3D-printed mount](images/05-pcb-mount.HEIC)
+![Attach the PCB to the 3D-printed mount](images/05-pcb-mount2.HEIC)
 
 ------------------------------------------------------------------------
 
@@ -206,7 +207,7 @@ Interface PCB
 Unitree R1 PC2
 ```
 
-![Connect 24 V power and PCB USB](images/06-power-usb.jpg)
+![Connect 24 V power and PCB USB](images/06-power-usb.HEIC)
 
 ------------------------------------------------------------------------
 
@@ -223,7 +224,7 @@ At this point:
 -   The PCB is connected to PC2 over USB.
 
 ![Completed BrainCo Revo2 retrofit on Unitree
-R1](images/07-completed-retrofit.jpg)
+R1](images/07-completed-retrofit.HEIC)
 
 The next step is to move to PC2 and verify that Linux can actually see
 the newly connected hand interface.
