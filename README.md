@@ -20,6 +20,48 @@ software on PC2.
 
 ------------------------------------------------------------------------
 
+# Table of Contents
+
+## Part I — Hardware Installation
+
+- [1. Remove the Original Unitree R1 Hands](#1-remove-the-original-unitree-r1-hands)
+- [2. Attach the BrainCo Revo2 Wiring](#2-attach-the-brainco-revo2-wiring)
+- [3. Install the 3D-Printed Wrist Mount](#3-install-the-3d-printed-wrist-mount)
+- [4. Route the Revo2 Wiring to the Top of the Robot](#4-route-the-revo2-wiring-to-the-top-of-the-robot)
+- [5. Attach the PCB to the 3D-Printed PCB Mount](#5-attach-the-pcb-to-the-3d-printed-pcb-mount)
+- [6. Connect 24 V Power and USB](#6-connect-24-v-power-and-usb)
+- [7. Completed Hardware Retrofit](#7-completed-hardware-retrofit)
+
+## Part II — Software Setup and Control
+
+- [8. Get Inside the R1: SSH into PC2](#8-get-inside-the-r1-ssh-into-pc2)
+- [9. First Check: Can PC2 See the Hands?](#9-first-check-can-pc2-see-the-hands)
+- [10. Trace the Hardware at the USB Level](#10-trace-the-hardware-at-the-usb-level)
+- [11. Unlock Serial-Port Access for the unitree User](#11-unlock-serial-port-access-for-the-unitree-user)
+- [12. Dig Through PC2 for Existing BrainCo Code](#12-dig-through-pc2-for-existing-brainco-code)
+- [13. Find Unitree's BrainCo Hand Bridge](#13-find-unitrees-brainco-hand-bridge)
+- [14. Decode the Hand IDs and Serial Settings](#14-decode-the-hand-ids-and-serial-settings)
+- [15. The Key Hack: Fix the Serial-Port Mismatch](#15-the-key-hack-fix-the-serial-port-mismatch)
+- [16. Patch the Source Directly on PC2](#16-patch-the-source-directly-on-pc2)
+- [17. Rebuild the Modified BrainCo Service](#17-rebuild-the-modified-brainco-service)
+- [18. Find the R1's Actual DDS Network Interface](#18-find-the-r1s-actual-dds-network-interface)
+- [19. Bring the Serial-to-DDS Bridge Online](#19-bring-the-serial-to-dds-bridge-online)
+- [20. Make the Hands Move with Unitree's Built-In Test](#20-make-the-hands-move-with-unitrees-built-in-test)
+- [21. Why the First Two-Hand Command Doesn't Work](#21-why-the-first-two-hand-command-doesnt-work)
+- [22. Get Both BrainCo Hands Moving at the Same Time](#22-get-both-brainco-hands-moving-at-the-same-time)
+- [23. Hack the Test Client for Individual Finger Control](#23-hack-the-test-client-for-individual-finger-control)
+- [24. Build a Safer Single-Finger Test](#24-build-a-safer-single-finger-test)
+- [25. Rebuild and Run the Modified Test](#25-rebuild-and-run-the-modified-test)
+
+## Reference
+
+- [File and Directory Reference](#file-and-directory-reference)
+- [Quick Command Reference](#quick-command-reference)
+- [What We Learned](#what-we-learned)
+- [Safety and Modification Note](#safety-and-modification-note)
+- [Project Summary](#project-summary)
+
+
 # Part I --- Hardware Installation
 
 ## Hardware Overview
@@ -148,8 +190,7 @@ The STL for this mount is stored in the repository:
 hardware/pcb-mount.stl
 ```
 
-Attach the PCB to the printed mount, then secure the PCB/mount assembly
-at the top of the robot.
+Attach the PCB to the printed mount, then secure the mount to the rail system on PC2.
 
 Make sure the board is mechanically secure and that its connectors
 remain accessible for the hand wiring, power, and USB connection.
